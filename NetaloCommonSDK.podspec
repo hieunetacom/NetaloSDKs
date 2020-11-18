@@ -138,10 +138,5 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
-    spec.ios.vendored_frameworks = "NetaloUISDK.framework"
-      #spec.default_subspecs = 'Main'
-      #spec.subspec 'Main' do |ss|
-      #  ss.ios.preserve_paths = 'NetaloUISDK.framework'
-      #  ss.ios.vendored_frameworks = 'NetaloUISDK.framework'
-      #  end
+    spec.ios.vendored_frameworks = "NetaloUISDK.framework", "NetaloCallSDK.framework", "NetaloSDK.framework"
 end
